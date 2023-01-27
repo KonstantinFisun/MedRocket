@@ -109,8 +109,8 @@ def main():
             if count_tasks > 0:
                 new_file.write("# Отчёт для " + user["company"]["name"] + ".\n" + user["name"] + " <" + user["email"] + "> " + \
                            datetime.datetime.today().strftime("%d.%m.%Y %H:%M") + "\nВсего задач: " + str(count_tasks) + \
-                           "\n\n" + "## Актуальные задачи (" + str(count_current_tasks) + ")\n" + list_current_tasks + \
-                           "\n" + "## Завершённые задачи (" + str(count_completed_tasks) + ")\n" + list_completed_tasks)
+                           "\n\n" + "## Актуальные задачи (" + str(count_current_tasks) + "):\n" + list_current_tasks + \
+                           "\n" + "## Завершённые задачи (" + str(count_completed_tasks) + "):\n" + list_completed_tasks)
             else:
                 new_file.write(
                     "# Отчёт для " + user["company"]["name"] + ".\n" + user["name"] + " <" + user["email"] + "> " + \
